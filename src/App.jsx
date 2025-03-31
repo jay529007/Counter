@@ -1,7 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
 
 function App() {
   // let values = 100;
@@ -21,8 +18,10 @@ function App() {
         <label>Value: {values}</label>{" "}
       </div>
       <br />
-        <button style={{ marginRight: "20px" }} onClick={addValue}>Increse Value </button>
-        <button onClick={subValue}>decrese Value</button>
+      <button style={{ marginRight: "20px" }} onClick={addValue}>
+        Increse Value{" "}
+      </button>
+      <button onClick={subValue}>decrese Value</button>
     </>
   );
 }
