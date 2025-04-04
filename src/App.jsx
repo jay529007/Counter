@@ -2,14 +2,14 @@ import { useState } from "react";
 
 function App() {
   // let values = 100;
-  let [values, setValues] = useState(100);
+  let [values, setValues] = useState(1);
   const addValue = () => {
-    setValues(++values);
-    console.log(`${values}`);
+    setValues(values +1);
+    // console.log(`${values}`);
   };
   const subValue = () => {
-    setValues(--values);
-    console.log(`${values}`);
+    setValues(values -1);
+    // console.log(`${values}`);
   };
   return (
     <>
@@ -21,7 +21,7 @@ function App() {
       <button style={{ marginRight: "20px" }} onClick={addValue}>
         Increse Value{" "}
       </button>
-      <button onClick={subValue}>decrese Value</button>
+      <button onClick={subValue}>Decrese Value</button>
     </>
   );
 }
